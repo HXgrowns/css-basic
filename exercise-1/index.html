@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <title>练习-1：css selector</title>
     <style>
-       /* you can test your css at here */
+       .section > .title {
+           color: bisque;
+       }
     </style>
 </head>
 <body>
     <div class="section">
+        <h1>
+            title
+            <h1 class="title">title2</h1>//这里为什么也会变色？
+            <span ><h1 class="title">title#</h1></span>
+        </h1>
+        <div class="title"><p class="title">这是段落</p></div>
+        <span><h1 class="title"> title2</h1></span>
+        <h1 id="title" class="title">title</h1>
         <h1 id="title" class="title">title</h1>
     </div>
 </body>

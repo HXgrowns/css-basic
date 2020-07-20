@@ -1,6 +1,8 @@
 body {
-    background-color: white;
+    margin: initial;
+    padding: initial;
     font-family: 'Raleway', sans-serif;
+    background-color: white;
 }
 
 .navigation ul {
@@ -10,6 +12,7 @@ body {
 }
 
 .navigation li {
+    padding: 10px;
     font-weight: 100;
     letter-spacing: 2px;
 }
@@ -21,11 +24,16 @@ body {
     letter-spacing: 4px;
 }
 
+.global {
+    visibility: hidden;
+}
+
 #banner {
     background-image: url("../img/background-img.jpeg");
     background-size: cover;
     background-position: bottom center;
     width: 100%;
+    height: 350px;
 }
 
 h1 {
@@ -37,11 +45,19 @@ h1 {
     font-size: 42px;
     font-weight: 600;
     text-align: center;
+    border: 2px solid white;
 }
 
 #main {
+    margin: 0 auto;
     padding: 40px;
+    width: 500px;
+    height: 800px;
     text-align: center;
+    overflow: scroll;
+}
+#main::-webkit-scrollbar {
+    display: none;
 }
 
 h2 {
@@ -52,13 +68,17 @@ h2 {
 }
 
 h3 {
+    margin: 30px 20px;
+    padding: 20px 30px;
     color: red;
     font-size: 14px;
     line-height: 48px;
     text-align: center;
+    border: 1px dotted red;
 }
 
 p {
+    margin-top: 40px;
     padding: 10px 20px;
     color: grey;
     font-size: 16px;
@@ -66,7 +86,8 @@ p {
 }
 
 .pull-quote {
-
+    margin: 0 auto;
+    width: 400px;
 }
 
 .byline {
@@ -86,11 +107,13 @@ p {
 }
 
 .share a {
+    display: inline-block;
+    padding: 14px; 
+    margin: 10px;   
+    color: white;
     background: red;
     border: 1px solid red;
     border-radius: 3px;
-    color: white;
-    display: inline-block;
     text-decoration: none;
 }
 
